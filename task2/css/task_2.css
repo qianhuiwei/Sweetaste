@@ -85,6 +85,10 @@ table {
 	width: 211px;
 }
 
+.header img:hover {
+	opacity: 0.8;
+}
+
 .menu {
 	display: flex;
 	justify-content: flex-end;
@@ -104,10 +108,19 @@ table {
 	color:#3F5D45;
 }
 
+.menu a:hover {
+	font-size: 20px;
+}
+
 .menu img {
 	width: 24px;
 	height: 24px;
 	margin-left: 19px;
+}
+
+.menu img:hover {
+	width: 28px;
+	height: 28px;
 }
 
 /* content */
@@ -274,10 +287,129 @@ table {
 
 .arrow:hover {
 	background: #EAF0ED;
-} */
+}
 
 /* footer */
-.footer {
-	background: #EAF0ED;
-	height: 300px;
+.subscribe {
+	display: flex;
+	align-items: center;
+	background: #3F5D45;
+	height: 116px;
+	padding-left: 122px;
+	padding-right: 122px;
 }
+
+.subscribe .logo {
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+}
+
+.subscribe p {
+	color:#EAF0ED;
+	font-size: 24px;
+	margin-right: 124px;
+}
+
+.inputbox {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 380px;
+	height: 56px;
+	background: #EAF0ED;
+}
+
+.inputbox .mail {
+	margin-left: 20px;
+	margin-right: 20px;
+	width: 24px;
+	height: 24px;
+}
+
+.inputbox input {
+	width: 252px;
+	height: 56px;
+	border: none;
+	background-color: #EAF0ED;
+	font-size: 24px;
+}
+
+.btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 64px;
+	height: 56px;
+	background: #FFE180;
+}
+
+.btn:hover {
+	opacity: 0.8;
+}
+
+.info {
+	background: #EAF0ED;
+	padding-left: 122px;
+	padding-right: 122px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.info-top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+.info-left{
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.info-left img {
+	width: 171px;
+	height: 27px;
+	margin-top: 10px;
+}
+
+.info-left p {
+	width: 227px;
+	color:#3F5D45;
+	line-height: 24px;
+	font-size: 16px;
+}
+
+.info-right{
+	width: 59px;
+	color:#3F5D45;
+	font-size: 24px;
+	font-weight: 600;
+	font-family:BiauKai;
+	writing-mode: vertical-rl;
+	line-height: 36px;
+	letter-spacing: 2px;
+}
+
+.info-bottom {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-bottom img{
+	width: 32px;
+	height: 32px;
+	margin-right: 8px;
+}
+
+.info-bottom img:hover{
+	opacity: 0.8;
+}
+
+.info-bottom p {
+	font-size: 16px;
+	font-family: serif;
+	color: #3F5D45;
+}
+
