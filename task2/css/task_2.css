@@ -146,7 +146,7 @@ table {
 	text-align: center;
 }
 
-.shop-left p {
+.shop-left h2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -187,8 +187,10 @@ table {
 
 .item-img-wrap {
 	position: relative;
-	width: 300px;
-	height: 315px;
+}
+
+.item-img-wrap img {
+	display: block;
 }
 
 .feature {
@@ -198,7 +200,6 @@ table {
 	color: #EAF0ED;
 	font-size: 16px;
 	background: #3F5D45;
-	width: 36px;
 	padding:10px;
 	line-height: 20px;
 }
@@ -374,15 +375,18 @@ table {
 	margin-top: 10px;
 }
 
-.info-left p {
-	width: 227px;
+.info-left .contact a {
 	color:#3F5D45;
 	line-height: 24px;
 	font-size: 16px;
+	text-decoration: none;
+}
+
+.info-left .contact a:hover {
+	text-decoration: underline;
 }
 
 .info-right{
-	width: 59px;
 	color:#3F5D45;
 	font-size: 24px;
 	font-weight: 600;
@@ -395,9 +399,14 @@ table {
 .info-bottom {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
-.info-bottom img{
+.info-bottom ul {
+	display: flex;
+}
+
+.info-bottom img {
 	width: 32px;
 	height: 32px;
 	margin-right: 8px;
