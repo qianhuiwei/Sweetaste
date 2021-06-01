@@ -180,7 +180,6 @@ table {
 }
 
 .list-item {
-	width: 300px;
 	margin-bottom: 30px;
 	margin-left: 20px;
 }
@@ -217,9 +216,8 @@ table {
 
 .item-label {
 	display: flex;
+	justify-content: space-between;
 	color:#3F5D45;
-	width: 300px;
-	height: 56px;
 }
 
 .name {
@@ -227,23 +225,25 @@ table {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid #EAF0ED;
+	padding: 16px;
 	text-align: left;
 	font-weight: 300;
 	font-size: 20px;
-	width: 173px;
+	width: 60%;
 }
 
 .price {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 16px;
 	border-top: 1px solid #EAF0ED;
 	border-bottom: 1px solid #EAF0ED;
 	border-right: 1px solid #EAF0ED;
 	text-align: center;
 	font-weight: 600;
 	font-size: 20px;
-	width: 127px;
+	width: 40%;
 }
 
 .add-to-cart {
@@ -271,6 +271,7 @@ table {
 .page a {
 	width: 60px;
 	height: 60px;
+	padding: 24px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -285,7 +286,6 @@ table {
 	background: #3F5D45;
 	color: #EAF0ED;
 }
-
 .arrow:hover {
 	background: #EAF0ED;
 }
@@ -333,7 +333,7 @@ table {
 	height: 56px;
 	border: none;
 	background-color: #EAF0ED;
-	font-size: 24px;
+	font-size: 20px;
 }
 
 .btn {
