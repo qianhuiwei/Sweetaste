@@ -1,6 +1,6 @@
 # Sweetaste
 
-This is a web page that demonstrates a mockup resume.  
+This is a web page that demonstrates an online sweet shop.  
 
 <img src="https://github.com/qianhuiwei/Sweetaste/blob/main/pageDemo.png" width="500"/>
 
