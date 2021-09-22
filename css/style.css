@@ -299,6 +299,7 @@ a{
     background: #EAF0ED;
     padding-left: 16px;
     margin-right: 16px;
+    font-size: 16px;
 }
 
 .input-field:focus {
