@@ -48,25 +48,24 @@ table {
 	border-spacing: 0;
 }
 
-/* apply border-box model to all elements */
-*, *:before, *:after{
+*, *:before, *:after{ /* apply border-box model to all elements */
 	box-sizing: border-box;
 }
 
+img { /* make all images responsive */
+	max-width: 100%; /* will adjust sizes with its container */
+	height:auto;
+}
+
+/* global config */
 body {
-    font-family: sans-serif;
+    font-family: PingFang TC;
     color:#3F5D45;
 }
 
 a{
     color:#3F5D45;
     text-decoration: none;
-}
-
-/* make all images responsive */
-img {
-	max-width: 100%; /* will adjust sizes with its container */
-	height:auto;
 }
 
 .container {
@@ -79,15 +78,12 @@ img {
     margin: 0 auto;
 }
 
+/* Header */
 .header {
     display: flex;
     justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
-}
-
-.header img {
-    height: 40px;
 }
 
 .menu {
@@ -99,10 +95,6 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 30px;
-    padding-right: 30px; */
     width: 72px;
     height: 48px;
     font-weight: bold;
@@ -112,6 +104,7 @@ img {
     background: #EAF0ED;
 }
 
+/* Banner */
 .banner {
     position: relative;
     height: 496px;
@@ -129,56 +122,50 @@ img {
     width: 90px;
 }
 
-.product {
+/* Main */
+.main {
     display: flex;
+    margin-bottom: 60px;
 }
 
 .product-category h2 {
     width: 300px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    line-height: 65px;
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
     background: #3F5D45;
     color:#EAF0ED;
 }
 
-.product-category ul li a {
-    width: 300px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.product-category a {
+    display: block;
+    line-height: 65px;
+    text-align: center;
     font-weight: bold;
     font-size: 24px;
-    border-left: 1px solid #EAF0ED;
-    border-right: 1px solid #EAF0ED;
-    border-bottom: 1px solid #EAF0ED;
+    border: 1px solid #EAF0ED;
+    margin-bottom: -1px;
 }
 
-.product-category ul li a:hover {
+.product-category a:hover {
     background: #EAF0ED;
 }
 
 .product-list {
     position:relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
 
 .product-list ul {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     margin-bottom: 10px;
 }
 
-.list-item {
+.product-list-card {
     width: 300px;
-    margin-left: 20px;
     position: relative;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -189,9 +176,9 @@ img {
     object-fit: cover;
 }
 
-.feature {
+.tag {
     position: absolute;
-    top:0;
+    top: 0;
     left: 20px;
     writing-mode: vertical-rl;
     background: #3F5D45;
@@ -202,7 +189,7 @@ img {
 
 .fav {
     position: absolute;
-    top: 16px;
+    top: 20px;
     right: 20px;
 }
 
@@ -210,35 +197,32 @@ img {
     color:#FFE180;
 }
 
-.product-detail {
+.product-list-card-body {
     display: flex;
+    line-height: 56px;
+    text-align: center;
     font-size: 20px;
 }
 
 .title {
     width: 175px;
-    text-align: center;
-    border: 1px solid #EAF0ED;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
 }
 
 .price {
     width: 125px;
-    text-align: center;
-    border: 1px solid #EAF0ED;
-    padding-top: 14px;
-    padding-bottom: 14px;
+    border-right: 1px solid #EAF0ED;
+    font-weight: bold;
 }
 
 .add-to-cart {
     display: block;
-    padding-top: 16px;
-    padding-bottom: 16px;
+    line-height: 65px;
     background: #EAF0ED;
     font-size: 24px;
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
 }
 
 .add-to-cart:hover {
@@ -246,10 +230,11 @@ img {
     color:#EAF0ED;;
 }
 
-.page a:hover{
-    background: #3F5D45;
-    color: #EAF0ED;;
+.page {
+    display: flex;
+    justify-content: flex-end;
 }
+
 .page a {
     display: flex;
     width: 60px;
@@ -259,13 +244,14 @@ img {
     border: 1px solid #EAF0ED;
 }
 
-.main {
-    margin-bottom: 60px;
+.page a:hover{
+    background: #3F5D45;
+    color: #EAF0ED;;
 }
 
+/* Subscribe */
 .subscribe {
     background: #3F5D45;
-
 }
 
 .subscribe .container-sm {
@@ -332,6 +318,7 @@ img {
     background: white;
 }
 
+/* Footer */
 .contact {
     background: #EAF0ED;
     padding-top: 30px;
@@ -384,6 +371,7 @@ img {
 .social-media img:hover{
     filter:opacity(70%);
 }
+
 .social-media a {
     margin-right: 8px;
 }
